@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* The App Card */
+.app {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Header & Score */
+.header {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#score {
+  font-weight: bold;
+  color: #4f46e5; /* Modern Indigo */
+}
+
+/* Question Styling */
+h1 {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+/* Holder & Answers */
+#holder {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Hide the default radio circle */
+#holder input[type="radio"] {
+  display: none;
+}
+
+/* Style the Label as a Button */
+#holder label {
+  display: block;
+  padding: 15px 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  color: #374151;
+}
+
+#holder label:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+/* Highlight the label when the hidden radio is checked */
+#holder input[type="radio"]:checked + label {
+  background-color: #eef2ff;
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+/* Footer & Button */
+.footer {
+  margin-top: 30px;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 20px;
+}
+
+button {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Result Screen */
+.result h2 {
+  text-align: center;
+  color: #10b981; /* Success Green */
+  margin-top: 20px;
+}
